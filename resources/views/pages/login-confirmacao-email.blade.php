@@ -21,7 +21,7 @@
 			<!-- begin login-header -->
 			<div class="login-header">
 				<div class="brand">
-					<span class="logo"></span> <b>Checkpoint</b> Admin
+					<span class="logo"></span> <b>Verifivação</b> usuário
 					<small>Capital Hospital</small>
 				</div>
 				<div class="icon">
@@ -31,24 +31,20 @@
 			<!-- end login-header -->
 			<!-- begin login-content -->
 			<div class="login-content">
-				<form action="/" method="POST" class="margin-bottom-0">
+				<form action="/" method="GET" class="margin-bottom-0">
 					<div class="form-group m-b-15">
-						<input type="text" class="form-control form-control-lg" placeholder="Login" required />
+						<input type="text" class="form-control form-control-lg" placeholder="Número de verificação" required />
 					</div>
 					<div class="form-group m-b-15">
-						<input type="password" class="form-control form-control-lg" placeholder="Senha" required />
-					</div>
-					<div class="checkbox checkbox-css m-b-30">
-						<input type="checkbox" id="remember_me_checkbox" value="" />
-						<label for="remember_me_checkbox">
-							Lembrar-me	
-						</label>
+						<p class="text-center">Seu número de verificação foi enviado para o <b class="text-checkpoint">E-MAIL</b> informado no seu cadastro</p>
+						
+						<p class="text-center"><b>Esses passos são necessários para garantir sua segurança</b></p>
 					</div>
 					<div class="login-buttons">
-						<button type="submit" class="btn s btn-block btn-lg btn-checkpoint">Entrar</button>
+						<button type="submit" class="btn s btn-block btn-lg btn-checkpoint">Verificar número</button>
 					</div>
 					<div class="m-t-20 m-b-40 p-b-40 text-inverse">
-						Não tem cadastro? <a href="/register/v3" class="text-checkpoint">Clique aqui</a> para fazer o cadastro.
+						Não tem o número de confirmação? <a href="/register/v3" class="text-checkpoint">Clique aqui</a> para fazer o cadastro.
 					</div>
 					<hr />
 					<p class="text-center text-grey-darker">

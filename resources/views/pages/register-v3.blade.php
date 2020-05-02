@@ -27,7 +27,7 @@
 			<!-- end register-header -->
 			<!-- begin register-content -->
 			<div class="register-content">
-				<form action="/" method="GET" class="margin-bottom-0">
+				<form action="/confirmacao-telefone" method="POST" class="margin-bottom-0">
 					<label class="control-label">Nome <span class="text-danger">*</span></label>
 					<div class="row row-space-10">
 						<div class="col-md-6 m-b-15">

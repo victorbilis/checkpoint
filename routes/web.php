@@ -260,8 +260,11 @@ Route::get('/register/v3', function () {
 Route::get('/helper/css', function () {
     return view('pages/helper-css');
 });
-Route::get('/user', function () {
-    return view('pages/user');
+Route::get('/confirmacao-telefone', function () {
+    return view('pages/login-confirmacao-fone');
+});
+Route::get('/confirmacao-email', function () {
+    return view('pages/login-confirmacao-email');
 });
 
 Route::get('/teste/twilio', function () {
