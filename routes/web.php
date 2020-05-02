@@ -263,3 +263,13 @@ Route::get('/helper/css', function () {
 Route::get('/user', function () {
     return view('pages/user');
 });
+
+Route::get('/teste/twilio', function () {
+    return view('teste');
+})->name('teste_twilio');
+
+Route::post('/teste/mensagem', 'HomeController@sendMessage')->name('enviar_mensagem');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -6,9 +6,12 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use GuzzleHttp\Client;
+
 
 class RegisterController extends Controller
 {
+    
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -47,11 +50,49 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+        //dd(env('BASE_URL_GRID').'dadoscadastrais/v1/consultas/v2/L0001/'.$data["cpf"]);
+        $cLink = env('BASE_URL_GRID').'dadoscadastrais/v1/consultas/v2/L0001/'.$data["cpf"];
+        $client = new Client();
+        $res = $client->request('GET', $cLink,[
+            'headers' => [
+                'X-Api-Key' => '2b26e357-c3a0-4854-8e5d-3afefb353034'
+            ]
         ]);
+        $aResponse = json_decode($res->getBody());
+
+        $cpf = $aResponse->content->nome->conteudo->documento;
+        $nome = $aResponse->content->nome->conteudo->nome;
+        /*if($res->getStatusCode() == 200){
+            dd($aResponse);
+        }else{
+            dd($aResponse);
+        } */
+
+
+
+        $messages = [
+            'required' => 'O campo é obrigatório.',
+            'sometimes' => 'teste',
+            'confirmed' => 'As senhas não estão iguais.',
+            'email' => 'Insira um e-mail válido.'
+        ];
+    
+        $rules = [
+            'email' => 'required|string|email|max:255',
+            'password' => 'required|string|min:6|confirmed'
+        ];
+
+        $validate = Validator::make($data, $rules, $messages);
+
+        $validate->sometimes(['cpf'], 'required', function ($data) use ($cpf) {
+            return $data["cpf"] == $cpf;
+        });
+
+        $validate->sometimes(['name'], 'required|string|max:255', function ($data) use ($nome) {
+            return $data["name"] == $nome;
+        });
+
+        return $validate;
     }
 
     /**
@@ -62,6 +103,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        dd("teste");
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
