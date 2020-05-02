@@ -269,7 +269,9 @@ Route::get('/confirmacao-email', function () {
 Route::get('/usuario-confirmado', function () {
     return view('pages/login-usuario-confirmado');
 });
-
+Route::get('/usuario-nao-confirmado', function () {
+    return view('pages/login-usuario-nao-confirmado');
+});
 Route::get('/teste/twilio', function () {
     return view('teste');
 })->name('teste_twilio');

@@ -7,12 +7,12 @@
 	<div class="login login-with-news-feed">
 		<!-- begin news-feed -->
 		<div class="news-feed">
-			<div class="news-image" style="background-image: url(../assets/img/login-bg/login-bg-11.jpg)"></div>
+			<div class="news-image" style="background-image: url(../assets/img/login-bg/login-bg-9.jpg)"></div>
 			<div class="news-caption">
-				<h4 class="caption-title"><b>Painel administrador</b></h4>
+				<!-- <h4 class="caption-title"><b>Painel administrador</b></h4>
 				<p>
 					Dados e informações sobre pacientes que utilizar o serviço da Checkpoint.
-				</p>
+				</p> -->
 			</div>
 		</div>
 		<!-- end news-feed -->
