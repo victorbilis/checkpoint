@@ -2574,7 +2574,11 @@ fieldset:disabled a.btn {
   background-color: #28a745;
   border-color: #28a745;
 }
-
+.btn-checkpoint{
+  color: #fff;
+  background-color: #A4D266;
+  border-color: #A4D266;
+}
 .btn-success:hover {
   color: #fff;
   background-color: #218838;
@@ -8842,7 +8846,9 @@ a.text-secondary:hover, a.text-secondary:focus {
 .text-success {
   color: #28a745 !important;
 }
-
+.text-checkpoint{
+  color: #1FA462;
+}
 a.text-success:hover, a.text-success:focus {
   color: #1e7e34 !important;
 }
