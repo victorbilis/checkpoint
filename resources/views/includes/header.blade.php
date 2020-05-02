@@ -42,7 +42,7 @@
 		<li class="dropdown">
 			<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-14">
 				<i class="fa fa-bell"></i>
-				<span class="label">5</span>
+				<span class="label bg-gradient-lime" >5</span>
 			</a>
 			<ul class="dropdown-menu media-list dropdown-menu-right">
 				<li class="dropdown-header">NOTIFICATIONS (5)</li>

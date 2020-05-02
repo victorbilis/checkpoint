@@ -1,5 +1,6 @@
 @extends('layouts.empty', ['paceTop' => true, 'bodyExtraClass' => 'bg-white'])
 
+
 @section('title', 'Register Page')
 
 @section('content')
@@ -36,19 +37,48 @@
 							<input type="text" class="form-control" placeholder="Sobrenome" required />
 						</div>
 					</div>
-					<label class="control-label">E-mail <span class="text-danger">*</span></label>
+					<label class="control-label">CPF <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="text" class="form-control" placeholder="Endereço e-mail " required />
+							<input id="masked-input-cpf" type="text" class="form-control" placeholder="999.999.999-99" required />
+						</div>
+					</div>
+					<label class="control-label">Sexo <span class="text-danger">*</span></label>
+					<div class="row m-b-15">
+						<div class="col-md-12">
+						<select id="inputState" class="form-control">
+							<option selected disabled>Escolha</option>
+							<option>Masculino</option>
+							<option>Feminino</option>
+							<option>Outros</option>
+						</select>
+						</div>
+					</div>					
+					<label class="control-label">Telefone<span class="text-danger">*</span></label>
+					<div class="row m-b-15">
+						<div class="col-md-12">
+							<input type="text" id="masked-input-phone" class="form-control" placeholder="(99) 99999-9999 " required />
+						</div>
+					</div>
+					<label class="control-label">E-mail<span class="text-danger">*</span></label>
+					<div class="row m-b-15">
+						<div class="col-md-12">
+							<input type="email" class="form-control" placeholder="Endereço e-mail " required />
 						</div>
 					</div>
 					<label class="control-label">Confirmar e-mail <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="text" class="form-control" placeholder="Escrever endereço e-mail" required />
+							<input type="email" class="form-control" placeholder="Escrever endereço e-mail" required />
 						</div>
 					</div>
 					<label class="control-label">Senha <span class="text-danger">*</span></label>
+					<div class="row m-b-15">
+						<div class="col-md-12">
+							<input type="password" class="form-control" placeholder="Informe uma senha" required />
+						</div>
+					</div>
+					<label class="control-label">Confirmar senha <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
 							<input type="password" class="form-control" placeholder="Informe uma senha" required />
@@ -72,3 +102,30 @@
 	</div>
 	<!-- end register -->
 @endsection
+
+@push('scripts')
+	<script src="/assets/plugins/jquery-migrate/jquery-migrate.min.js"></script>
+	<script src="/assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+	<script src="/assets/plugins/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+	<script src="/assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+	<script src="/assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+	<script src="/assets/plugins/password-indicator/js/password-indicator.js"></script>
+	<script src="/assets/plugins/bootstrap-combobox/js/bootstrap-combobox.js"></script>
+	<script src="/assets/plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="/assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+	<script src="/assets/plugins/tag-it/js/tag-it.min.js"></script>
+    <script src="/assets/plugins/moment/moment.js"></script>
+    <script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="/assets/plugins/select2/dist/js/select2.min.js"></script>
+    <script src="/assets/plugins/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../assets/plugins/bootstrap-show-password/bootstrap-show-password.js"></script>
+    <script src="/assets/plugins/bootstrap-colorpalette/js/bootstrap-colorpalette.js"></script>
+    <script src="/assets/plugins/jquery-simplecolorpicker/jquery.simplecolorpicker.js"></script>
+    <script src="/assets/plugins/clipboard/dist/clipboard.min.js"></script>
+	<script src="/assets/js/demo/form-plugins.demo.js"></script>
+	<script>
+		$(document).ready(function() {
+			FormPlugins.init();
+		});
+	</script>
+@endpush

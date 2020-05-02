@@ -17,15 +17,25 @@ return [
 		'icon' => 'fa fa-th-large',
 		'title' => 'Dashboard',
 		'url' => '/dashboard/v2',
-		// 'caret' => true,
-		// 'sub_menu' => [[
-		// 	'url' => '/dashboard/v1',
-		// 	'title' => 'Dashboard v1'
-		// ],[
-		// 	'url' => '/dashboard/v2',
-		// 	'title' => 'Dashboard v2'
-		// ]]
 	],[
+		'icon' => 'fas fa-user-plus',
+		'title' => 'Cadastro de paciente',
+		'url' => '/form/wizards',
+	],[
+		'icon' => 'fas fa-users',
+		'title' => 'Lista de paciente',
+		'url' => '/table/manage/default',
+	],
+	[
+		'icon' => 'fas fa-user-md',
+		'title' => 'Lista de médicos',
+		'url' => '/table/manage/autofill',
+	],[
+		'icon' => 'fa fa-calendar',
+		'title' => 'Consultas Marcadas',
+		'url' => '/calendar'
+	],
+	[
 		'icon' => 'fa fa-gem',
 		'title' => 'UI Elements',
 		'url' => 'javascript:;',
@@ -188,10 +198,6 @@ return [
 			'title' => 'd3 Chart'
 		]]
 	],[
-		'icon' => 'fa fa-calendar',
-		'title' => 'Calendar',
-		'url' => '/calendar'
-	],[
 		'icon' => 'fa fa-map',
 		'title' => 'Map',
 		'url' => 'javascript:;',
@@ -348,38 +354,6 @@ return [
 		'sub_menu' => [[
 			'url' => '/helper/css',
 			'title' => 'Predefined CSS Classes'
-		]]
-	],[
-		'icon' => 'fa fa-align-left',
-		'title' => 'Menu Level',
-		'url' => 'javascript:;',
-		'caret' => true,
-		'sub_menu' => [[
-			'url' => 'javascript:;',
-			'title' => 'Menu 1.1',
-			'sub_menu' => [[
-				'url' => 'javascript:;',
-				'title' => 'Menu 2.1',
-				'sub_menu' => [[
-					'url' => 'javascript:;',
-					'title' => 'Menu 3.1',
-				],[
-					'url' => 'javascript:;',
-					'title' => 'Menu 3.2'
-				]]
-			],[
-				'url' => 'javascript:;',
-				'title' => 'Menu 2.2'
-			],[
-				'url' => 'javascript:;',
-				'title' => 'Menu 2.3'
-			]]
-		],[
-			'url' => 'javascript:;',
-			'title' => 'Menu 1.2'
-		],[
-			'url' => 'javascript:;',
-			'title' => 'Menu 1.3'
 		]]
 	]]
 ];
