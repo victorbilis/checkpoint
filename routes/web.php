@@ -266,6 +266,9 @@ Route::get('/confirmacao-telefone', function () {
 Route::get('/confirmacao-email', function () {
     return view('pages/login-confirmacao-email');
 });
+Route::get('/usuario-confirmado', function () {
+    return view('pages/login-usuario-confirmado');
+});
 
 Route::get('/teste/twilio', function () {
     return view('teste');
