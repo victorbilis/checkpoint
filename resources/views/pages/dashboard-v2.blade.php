@@ -797,7 +797,7 @@
 									
 								</tr>
 								<tr>
-									<td><label class="label label-warning">Bounce Ratea</label></td>
+									<td><label class="label label-warning">Bounce Rate</label></td>
 									<td>28.2%</td>
 									
 								</tr>
