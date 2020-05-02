@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Twilio\Rest\Client;
+use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
 {
@@ -34,7 +35,53 @@ class HomeController extends Controller
         $twilio->verify->v2->services($twilio_verify_sid)
             ->verifications
             ->create($request->phone_number, "sms");
-            return redirect()->route('teste_twilio');
+            return view('teste2',['phonenumber' => $request->phone_number]);
+    }
+
+    public function verificar(Request $request)
+    {
+        $data = $request->toArray();
+        
+        $validate = Validator::make($data, [
+            'verification_code' => 'required|numeric',
+            'phone_number' => 'required|string'
+        ]);
+        /* Get credentials from .env */
+        //dd($data['phone_number']);
+        $token = env("TWILIO_AUTH_TOKEN");
+        $twilio_sid = env("TWILIO_SID");
+        $twilio_verify_sid = env("TWILIO_VERIFY_SID");
+        $twilio = new Client($twilio_sid, $token);
+        $verification = $twilio->verify->v2->services($twilio_verify_sid)
+            ->verificationChecks
+            ->create($data['verification_code'], array('to' => $data['phone_number']));
+        if ($verification->valid) {
+            dd('Phone number verified');
+        }
+       return redirect()->route('teste_twilio2')->with(['phone_number' => $data['phone_number'], 'error' => 'Invalid verification code entered!']);
+    }
+
+    public function receita(Request $request)
+    {
+        $data = $request->toArray();
+        
+        $validate = Validator::make($data, [
+            'verification_code' => 'required|numeric',
+            'phone_number' => 'required|string'
+        ]);
+        /* Get credentials from .env */
+        //dd($data['phone_number']);
+        $token = env("TWILIO_AUTH_TOKEN");
+        $twilio_sid = env("TWILIO_SID");
+        $twilio_verify_sid = env("TWILIO_VERIFY_SID");
+        $twilio = new Client($twilio_sid, $token);
+        $verification = $twilio->verify->v2->services($twilio_verify_sid)
+            ->verificationChecks
+            ->create($data['verification_code'], array('to' => $data['phone_number']));
+        if ($verification->valid) {
+            dd('Phone number verified');
+        }
+       return redirect()->route('teste_twilio2')->with(['phone_number' => $data['phone_number'], 'error' => 'Invalid verification code entered!']);
     }
 
     /**
@@ -44,6 +91,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('pages/login-v3');
     }
 }

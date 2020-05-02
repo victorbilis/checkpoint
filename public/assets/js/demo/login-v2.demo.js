@@ -17,12 +17,17 @@ var handleLoginPageChangeBackground = function() {
     });
 };
 
+var alertando = function() {
+    console.log('pegou');
+};
+
 var LoginV2 = function () {
 	"use strict";
     return {
         //main function
         init: function () {
             handleLoginPageChangeBackground();
+            alertando();
         }
     };
 }();

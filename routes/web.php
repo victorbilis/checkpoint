@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-	return redirect('/dashboard/v2');
+	return redirect('/login/v3');
 });
 Route::get('/dashboard/v1', function () {
     return view('pages/dashboard-v1');
@@ -268,7 +268,12 @@ Route::get('/teste/twilio', function () {
     return view('teste');
 })->name('teste_twilio');
 
+Route::get('/teste/twilio2', function () {
+    return view('teste2');
+})->name('teste_twilio2');
+
 Route::post('/teste/mensagem', 'HomeController@sendMessage')->name('enviar_mensagem');
+Route::post('/teste/mensagem/verificar', 'HomeController@verificar')->name('verificar');
 
 Auth::routes();
 

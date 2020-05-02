@@ -62,6 +62,7 @@
 	<script>
 		$(document).ready(function() {
 			LoginV2.init();
+			FormPlugins.init();
 		});
 	</script>
 @endpush

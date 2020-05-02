@@ -291,6 +291,10 @@ var handleClipboard = function() {
 	});
 };
 
+var alertando = function() {
+    console.log('pegou');
+};
+
 
 var FormPlugins = function () {
 	"use strict";
@@ -314,7 +318,8 @@ var FormPlugins = function () {
 			handleDateTimePicker();
 			handleBootstrapColorPalette();
 			handleSimpleColorpicker();
-			handleClipboard();
+            handleClipboard();
+            alertando();
         }
     };
 }();
