@@ -260,10 +260,18 @@ Route::get('/register/v3', function () {
 Route::get('/helper/css', function () {
     return view('pages/helper-css');
 });
-Route::get('/user', function () {
-    return view('pages/user');
+Route::get('/confirmacao-telefone', function () {
+    return view('pages/login-confirmacao-fone');
 });
-
+Route::get('/confirmacao-email', function () {
+    return view('pages/login-confirmacao-email');
+});
+Route::get('/usuario-confirmado', function () {
+    return view('pages/login-usuario-confirmado');
+});
+Route::get('/usuario-nao-confirmado', function () {
+    return view('pages/login-usuario-nao-confirmado');
+});
 Route::get('/teste/twilio', function () {
     return view('teste');
 })->name('teste_twilio');

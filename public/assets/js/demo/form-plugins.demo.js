@@ -82,11 +82,12 @@ var handleIonRangeSlider = function() {
 var handleFormMaskedInput = function() {
     "use strict";
     $("#masked-input-date").mask("99/99/9999");
-    $("#masked-input-phone").mask("(999) 999-9999");
+    $("#masked-input-phone").mask("(99) 99999-9999");
     $("#masked-input-tid").mask("99-9999999");
     $("#masked-input-ssn").mask("999-99-9999");
     $("#masked-input-pno").mask("aaa-9999-a");
     $("#masked-input-pkey").mask("a*-999-a999");
+    $("#masked-input-cpf").mask("999.999.999-99");
 };
 
 var handleFormColorPicker = function () {
@@ -296,6 +297,22 @@ var alertando = function() {
 };
 
 
+var alertando = function() {
+	$(function(){
+        alert('pegou');
+    });
+};
+var alertNOVO = function () {
+	"use strict";
+    return {
+        //main function
+        init: function () {
+            alertando();
+        }
+    };
+}();
+
+
 var FormPlugins = function () {
 	"use strict";
     return {
@@ -319,7 +336,11 @@ var FormPlugins = function () {
 			handleBootstrapColorPalette();
 			handleSimpleColorpicker();
             handleClipboard();
+<<<<<<< HEAD
             alertando();
+=======
+            alertNOVO();
+>>>>>>> ac18f3d6658ceca5f1c7b2e3cd887c35890992f6
         }
     };
 }();

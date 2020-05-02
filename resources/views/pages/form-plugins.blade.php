@@ -1063,7 +1063,7 @@
 							<div class="col-md-8">
 								<button class="btn btn-inverse btn-sm" type="button" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Click to copy</button>
 							</div>
-						</div>
+						</div>						
 					</form>
 				</div>
 				<!-- end panel-body -->

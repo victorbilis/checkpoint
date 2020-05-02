@@ -1449,7 +1449,6 @@ var handleClearPageOption = function(option) {
 	}
 };
 
-
 /* Application Controller
 ------------------------------------------------ */
 var App = function () {
@@ -1543,6 +1542,6 @@ var App = function () {
             $('html, body').animate({
                 scrollTop: $('body').offset().top
             }, 0);
-		}
+        },
   };
 }();
