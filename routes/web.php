@@ -260,3 +260,6 @@ Route::get('/register/v3', function () {
 Route::get('/helper/css', function () {
     return view('pages/helper-css');
 });
+Route::get('/user', function () {
+    return view('pages/user');
+});
