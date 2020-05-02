@@ -445,7 +445,7 @@
 						<td class="f-s-600 text-inverse">31</td>
 						<td class="with-img"><img src="/assets/img/user/user-3.jpg" class="img-rounded height-30" /></td>
 						<td>Webkit</td>
-						<td>OmniWeb 5.5</td>
+						<td>OmniWeb 5.5da</td>
 						<td>OSX.4+</td>
 						<td>420</td>
 						<td>A</td>
