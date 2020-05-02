@@ -463,7 +463,7 @@
 						<td class="f-s-600 text-inverse">33</td>
 						<td class="with-img"><img src="/assets/img/user/user-5.jpg" class="img-rounded height-30" /></td>
 						<td>Webkit</td>
-						<td>S60</td>
+						<td>S60a</td>
 						<td>S60</td>
 						<td>413</td>
 						<td>A</td>
