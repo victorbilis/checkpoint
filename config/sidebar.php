@@ -16,30 +16,15 @@ return [
     'menu' => [[
 		'icon' => 'fa fa-th-large',
 		'title' => 'Dashboard',
-		'url' => 'javascript:;',
-		'caret' => true,
-		'sub_menu' => [[
-			'url' => '/dashboard/v1',
-			'title' => 'Dashboard v1'
-		],[
-			'url' => '/dashboard/v2',
-			'title' => 'Dashboard v2'
-		]]
-	],[
-		'icon' => 'fa fa-hdd',
-		'title' => 'Email',
-		'url' => 'javascript:;',
-		'badge' => '10',
-		'sub_menu' => [[
-			'url' => '/email/inbox',
-			'title' => 'Inbox'
-		],[
-			'url' => '/email/compose',
-			'title' => 'Compose'
-		],[
-			'url' => '/email/detail',
-			'title' => 'Detail'
-		]]
+		'url' => '/dashboard/v2',
+		// 'caret' => true,
+		// 'sub_menu' => [[
+		// 	'url' => '/dashboard/v1',
+		// 	'title' => 'Dashboard v1'
+		// ],[
+		// 	'url' => '/dashboard/v2',
+		// 	'title' => 'Dashboard v2'
+		// ]]
 	],[
 		'icon' => 'fa fa-gem',
 		'title' => 'UI Elements',
@@ -93,11 +78,6 @@ return [
 			'url' => '/ui/intro-js',
 			'title' => 'Intro JS'
 		]]
-	],[
-		'img' => '/assets/img/logo/logo-bs4.png',
-		'title' => 'Bootstrap 4',
-		'url' => '/bootstrap-4',
-		'label' => 'NEW'
 	],[
 		'icon' => 'fa fa-list-ol',
 		'title' => 'Form Stuff',
@@ -188,36 +168,6 @@ return [
 				'url' => '/table/manage/combine',
 				'title' => 'Extension Combination'
 			]]
-		]]
-	],[
-		'icon' => 'fa fa-star',
-		'title' => 'Frontend',
-		'url' => 'javascript:;',
-		'caret' => true,
-		'sub_menu' => [[
-			'url' => 'javascript:;',
-			'title' => 'One Page Parallax'
-		],[
-			'url' => 'javascript:;',
-			'title' => 'Blog'
-		],[
-			'url' => 'javascript:;',
-			'title' => 'Forum'
-		],[
-			'url' => 'javascript:;',
-			'title' => 'E-Commerce'
-		]]
-	],[
-		'icon' => 'fa fa-envelope',
-		'title' => 'Email Template',
-		'url' => 'javascript:;',
-		'caret' => true,
-		'sub_menu' => [[
-			'url' => '/email-template/system',
-			'title' => 'System Template'
-		],[
-			'url' => '/email-template/newsletter',
-			'title' => 'Newsletter Template'
 		]]
 	],[
 		'icon' => 'fa fa-chart-pie',

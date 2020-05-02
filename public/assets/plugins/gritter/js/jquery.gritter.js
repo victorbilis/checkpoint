@@ -152,17 +152,6 @@
 				return false;
 			}
 
-			$('#gritter-notice-wrapper').addClass(position).append(tmp);
-			
-			var item = $('#gritter-item-' + this._item_count);
-			
-			item.fadeIn(this.fade_in_speed, function(){
-				Gritter['_after_open_' + number]($(this));
-			});
-			
-			if(!sticky){
-				this._setFadeTimer(item, number);
-			}
 			
 			// Bind the hover/unhover states
 			$(item).bind('mouseenter mouseleave', function(event){
