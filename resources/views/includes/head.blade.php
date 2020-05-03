@@ -12,7 +12,7 @@
 <link href="/assets/css/default/style-responsive.min.css" rel="stylesheet" />
 <link href="/assets/css/default/theme/default.css" rel="stylesheet" id="theme" />
 
-<link rel="icon" href="/assets/img/user/user-1.jpg" type="image/gif" sizes="16x16">
+<link rel="icon" href="/assets/img/logo/LogoCheckpoint.png" type="image/gif" sizes="16x16">
 <!-- ================== END BASE CSS STYLE ================== -->
 
 <!-- ================== BEGIN BASE JS ================== -->

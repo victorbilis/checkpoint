@@ -8,7 +8,7 @@
 <div id="header" class="header {{ $headerClass }}">
 	<!-- begin navbar-header -->
 	<div class="navbar-header">
-		<a href="index.html" class="navbar-brand"><span class="navbar-logo"></span> <b>Color</b> Admin</a>
+		<a href="index.html" class="navbar-brand"><img src="/assets/img/logo/LogoCheckpoint.png" class="img-rounded height-30" /><b> Checkpoint</b> Admin</a>
 		@if (!$sidebarHide)
 		<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
 			<span class="icon-bar"></span>
