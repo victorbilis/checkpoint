@@ -16,7 +16,7 @@
 					<div class="info">
 						<b class="caret pull-right"></b>
 						Sean Ngu
-						<small>Front end developer</small>
+						<small>CEO Hospital Capital</small>
 					</div>
 				</a>
 			</li>
