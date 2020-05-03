@@ -20,6 +20,7 @@ composer install
 
 Através do bash/console acesse a raiz do projeto e deixe executando:
 ```bash
+php artisan generate:key
 php artisan serve
 ```
 E acesse o link na sua máquina: http://127.0.0.1:8000/
