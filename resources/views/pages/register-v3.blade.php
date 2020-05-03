@@ -45,9 +45,9 @@
 						<div class="col-md-12">
 						<select id="inputState" class="form-control" name="gener">
 							<option selected disabled>Escolha</option>
-							<option value="">Masculino</option>
-							<option value="">Feminino</option>
-							<option value="">Outros</option>
+							<option value="m">Masculino</option>
+							<option value="f">Feminino</option>
+							<option value="o">Outros</option>
 						</select>
 						</div>
 					</div>					
