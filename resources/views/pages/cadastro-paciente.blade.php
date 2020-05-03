@@ -126,7 +126,7 @@
 								<!-- end form-group row -->
 								<!-- begin form-group row -->
 								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Data de aniversário</label>
+									<label class="col-md-3 text-md-right col-form-label">Data de nascimento</label>
 									<div class="col-md-6">
 										<div class="row row-space-6">
 											<div class="col-4">
@@ -169,13 +169,13 @@
 								<legend class="no-border f-w-700 p-b-0 m-t-0 m-b-20 f-s-16 text-inverse">Dados do atendimento</legend>
 								
 								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Atentende resposável</label>
+									<label class="col-md-3 text-md-right col-form-label">Atentende responsável</label>
 									<div class="col-md-6">
 									<input type="text" name="ic" placeholder="Ana Lucia Santos" class="form-control" disabled />
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">hash resposável</label>
+									<label class="col-md-3 text-md-right col-form-label">hash responsável</label>
 									<div class="col-md-6">
 									<input type="text" name="ic" placeholder="85136c79cbf9fe36bb9d05d0639c70c265c18d37" class="form-control" disabled/>
 									</div>
@@ -313,8 +313,8 @@
 											</form>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Send message</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+											<button type="button" class="btn btn-primary">Salvar</button>
 										</div>
 										</div>
 									</div>
@@ -328,15 +328,15 @@
 								<br/>
 								<legend class="no-border f-w-700 p-b-0 m-t-0 m-b-20 f-s-16 text-inverse">Informações da consulta</legend>
 								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Médico</label>
+									<label class="col-md-3 text-md-right col-form-label">Nome médico</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
+									<input type="text" name="ic" value="Pedro Henrique" class="form-control"  disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Médico</label>
+									<label class="col-md-3 text-md-right col-form-label">Hash do médico</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
+									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
@@ -364,7 +364,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Horário de atendimento</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="18:30:44" class="form-control" />
+									<input type="text" name="ic" placeholder="19:30:44" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
@@ -440,15 +440,15 @@
 								<br/>
 								<legend class="no-border f-w-700 p-b-0 m-t-0 m-b-20 f-s-16 text-inverse">Informações da consulta</legend>
 								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Médico</label>
+									<label class="col-md-3 text-md-right col-form-label">Nome enfermera</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
+									<input type="text" name="ic" value="Maria Clara" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Médico</label>
+									<label class="col-md-3 text-md-right col-form-label">Hash enfermera</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
+									<input type="text" name="ic" value="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
@@ -488,7 +488,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Pessão do paciente</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="" class="form-control" />
+									<input type="text" name="ic" placeholder="140/90" class="form-control" />
 									</div>
 								</div>
 								<div class="form-group row m-b-10">

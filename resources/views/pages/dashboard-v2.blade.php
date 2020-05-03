@@ -28,12 +28,12 @@
 			<div class="widget widget-stats bg-gradient-green">
 				<div class="stats-icon stats-icon-lg"><i class="fa fa-globe fa-fw"></i></div>
 				<div class="stats-content">
-					<div class="stats-title">CONSULTAS REALIZADAS NESSE MÊS</div>
-					<div class="stats-number">7,842,900</div>
+					<div class="stats-title">TAXA DE OCUPAÇÃO</div>
+					<div class="stats-number">70%</div>
 					<div class="stats-progress progress">
-						<div class="progress-bar" style="width: 70.1%;"></div>
+						<div class="progress-bar" style="width: 50.1%;"></div>
 					</div>
-					<div class="stats-desc">Aumento de no mês (70.1%)</div>
+					<div class="stats-desc">Aumento de no mês (50.1%)</div>
 				</div>
 			</div>
 		</div>
@@ -58,12 +58,12 @@
 			<div class="widget widget-stats bg-gradient-purple">
 				<div class="stats-icon stats-icon-lg"><i class="fa fa-archive fa-fw"></i></div>
 				<div class="stats-content">
-					<div class="stats-title">NOVOS PACIENTES</div>
-					<div class="stats-number">38,900</div>
+					<div class="stats-title">CONSULTAS REALIZADAS NESSE MÊS</div>
+					<div class="stats-number">7,842,900</div>
 					<div class="stats-progress progress">
-						<div class="progress-bar" style="width: 76.3%;"></div>
+						<div class="progress-bar" style="width: 70.1%;"></div>
 					</div>
-					<div class="stats-desc">Aumento de no mês (76.3%)</div>
+					<div class="stats-desc">Aumento de no mês (70.1%)</div>
 				</div>
 			</div>
 		</div>
