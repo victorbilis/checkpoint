@@ -93,7 +93,7 @@
 									<div class="modal-body">
 										<div class="form-group">
 											<label for="formGroupExampleInput">Leia o código do paciente ou digite ele aqui para começar o atendimento</label>
-											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="d77faaa3c82935734dd19ff19bf86a39c5bd7748">
+											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="d77faaa3c82935734dd19ff19bf86a39c5bd7748" disabled>
 										</div>
 										<div class="">
 										<br/>
@@ -120,7 +120,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Nome Completo</label>
 									<div class="col-md-6">
-										<input type="text" name="firstname" placeholder="John" class="form-control" />
+										<input type="text" name="firstname" placeholder="Paulo Augusto da Silva" class="form-control" disabled/>
 									</div>
 								</div>
 								<!-- end form-group row -->
@@ -131,17 +131,17 @@
 										<div class="row row-space-6">
 											<div class="col-4">
 												<select class="form-control" name="year">
-													<option>-- Dia --</option>
+													<option>16</option>
 												</select>
 											</div>
 											<div class="col-4">
 												<select class="form-control" name="month">
-													<option>-- Mês --</option>
+													<option>11</option>
 												</select>
 											</div>
 											<div class="col-4">
 												<select class="form-control" name="day">
-													<option>-- Ano --</option>
+													<option>1982</option>
 												</select>
 											</div>
 										</div>
@@ -152,7 +152,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Cpf</label>
 									<div class="col-md-6">
-										<input type="text" name="ic" placeholder="999.999.999-99" class="form-control" />
+										<input type="text" name="ic" placeholder="430.589.963-66" class="form-control" disabled/>
 									</div>
 								</div>
 								<!-- end form-group row -->
@@ -160,7 +160,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Enderço</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="Av. Santa - 1333" class="form-control" />
+									<input type="text" name="ic" placeholder="Av. Santa - 1333" class="form-control" disabled/>
 									</div>
 								</div>
 								<!-- end form-group row -->
@@ -171,13 +171,13 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Atentende responsável</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="Ana Lucia Santos" class="form-control" disabled />
+									<input type="text" name="ic" placeholder="Ana Lucia Santos" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">hash responsável</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="85136c79cbf9fe36bb9d05d0639c70c265c18d37" class="form-control" disabled/>
+									<input type="text" name="ic" value="85136c79cbf9fe36bb9d05d0639c70c265c18d37" class="form-control" disabled/>
 									</div>
 								</div>								
 								<div class="form-group row m-b-10">
@@ -186,17 +186,17 @@
 										<div class="row row-space-6">
 											<div class="col-4">
 												<select class="form-control" name="year">
-													<option>-- Dia --</option>
+													<option>03</option>
 												</select>
 											</div>
 											<div class="col-4">
 												<select class="form-control" name="month">
-													<option>-- Mês --</option>
+													<option>03</option>
 												</select>
 											</div>
 											<div class="col-4">
 												<select class="form-control" name="day">
-													<option>-- Ano --</option>
+													<option>2020</option>
 												</select>
 											</div>
 										</div>
@@ -205,7 +205,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Horário de atendimento</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="18:30:44" class="form-control" />
+									<input type="text" name="ic" value="18:30:44" class="form-control" disabled/>
 									</div>
 								</div>
 							</div>
@@ -231,22 +231,28 @@
 								<!-- Button trigger modal -->
 								<legend class="no-border f-w-700 p-b-0 m-t-0 m-b-20 f-s-16 text-inverse">Informações da triagem</legend>
 								<div class="form-group row m-b-10">
+									<label class="col-md-3 text-md-right col-form-label">hash do Paciente</label>
+									<div class="col-md-6">
+									<input type="text" name="ic" value="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" disabled/>
+									</div>
+								</div>
+								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Funcionário responsável</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
+									<input type="text" name="ic" value="Beatriz Carla Silva" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">hash do Funcionário </label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
+									<input type="text" name="ic" value="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" disabled/>
 									</div>
 								</div>
 								<!-- begin form-group row -->
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Encaminhamento</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="" class="form-control" />
+									<input type="text" name="ic" placeholder="Paciente encamilhado para a sala de espera" class="form-control" disabled/>
 									</div>
 								</div>
 								<!-- end form-group row -->
@@ -254,7 +260,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Situação</label>
 									<div class="col-md-6">
-										<input type="email" name="email" placeholder="Grave/moderada/tranquila" class="form-control" />
+										<input type="email" name="email" placeholder="Grave" class="form-control" disabled/>
 									</div>
 								</div>
 								<!-- end form-group row -->
@@ -304,11 +310,12 @@
 											<form>
 											<div class="form-group">
 												<label for="recipient-name" class="col-form-label">Título:</label>
-												<input type="text" class="form-control" id="recipient-name">
+												<input type="text" class="form-control" id="recipient-name" value="Via intramuscular" disabled>
 											</div>
 											<div class="form-group">
 												<label for="message-text" class="col-form-label">Descrição:</label>
-												<textarea class="form-control" id="message-text"></textarea>
+												<textarea class="form-control" id="message-text"disabled>Extricnin 1 mg aplicações intramusculares 1 vez ao dia durante 12 dias
+												</textarea>
 											</div>
 											</form>
 										</div>
@@ -330,7 +337,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Nome médico</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" value="Pedro Henrique" class="form-control"  disabled/>
+									<input type="text" name="ic" value="Dr. Marco Ribeiro" class="form-control"  disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
@@ -345,17 +352,17 @@
 										<div class="row row-space-6">
 											<div class="col-4">
 												<select class="form-control" name="year">
-													<option>-- Dia --</option>
+													<option>03</option>
 												</select>
 											</div>
 											<div class="col-4">
 												<select class="form-control" name="month">
-													<option>-- Mês --</option>
+													<option>03</option>
 												</select>
 											</div>
 											<div class="col-4">
 												<select class="form-control" name="day">
-													<option>-- Ano --</option>
+													<option>2020</option>
 												</select>
 											</div>
 										</div>
@@ -370,7 +377,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Procedimento</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="informar o que foi passado para o paciente" class="form-control" />
+									<input type="text" name="ic" placeholder="Receita foi preescrita para o paciente fazer tratamento em casa" class="form-control" disabled/>
 									</div>
 								</div>
 							</div>								
@@ -457,17 +464,17 @@
 										<div class="row row-space-6">
 											<div class="col-4">
 												<select class="form-control" name="year">
-													<option>-- Dia --</option>
+													<option>03</option>
 												</select>
 											</div>
 											<div class="col-4">
 												<select class="form-control" name="month">
-													<option>-- Mês --</option>
+													<option>03</option>
 												</select>
 											</div>
 											<div class="col-4">
 												<select class="form-control" name="day">
-													<option>-- Ano --</option>
+													<option>2020</option>
 												</select>
 											</div>
 										</div>
@@ -476,25 +483,25 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Horário de atendimento</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="18:30:44" class="form-control" />
+									<input type="text" name="ic" placeholder="18:30:44" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Temperatura do paciente</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="27°" class="form-control" />
+									<input type="text" name="ic" placeholder="27°" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Pessão do paciente</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="140/90" class="form-control" />
+									<input type="text" name="ic" placeholder="140/90" class="form-control" disabled/>
 									</div>
 								</div>
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Descrição</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="Procedimento que o paciente passou" class="form-control" />
+									<input type="text" name="ic" placeholder="Paciente passou pelo procedimento de coleta de sangue" class="form-control" disabled/>
 									</div>
 								</div>
 							</div>								
