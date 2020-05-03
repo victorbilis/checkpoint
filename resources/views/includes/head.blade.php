@@ -2,7 +2,7 @@
 <title>Painel de controle | @yield('title')</title>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 <meta content="" name="description" />
-<meta content="" name="author" />
+<meta content="Paulo | Victor" name="author" />
 
 <!-- ================== BEGIN BASE CSS STYLE ================== -->
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -11,6 +11,8 @@
 <link href="/assets/css/default/style.min.css" rel="stylesheet" />
 <link href="/assets/css/default/style-responsive.min.css" rel="stylesheet" />
 <link href="/assets/css/default/theme/default.css" rel="stylesheet" id="theme" />
+
+<link rel="icon" href="/assets/img/user/user-1.jpg" type="image/gif" sizes="16x16">
 <!-- ================== END BASE CSS STYLE ================== -->
 
 <!-- ================== BEGIN BASE JS ================== -->

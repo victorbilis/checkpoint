@@ -272,6 +272,12 @@ Route::get('/usuario-confirmado', function () {
 Route::get('/usuario-nao-confirmado', function () {
     return view('pages/login-usuario-nao-confirmado');
 });
+Route::get('/cadastro-paciente', function () {
+    return view('pages/cadastro-paciente');
+});
+
+
+
 Route::get('/teste/twilio', function () {
     return view('teste');
 })->name('teste_twilio');

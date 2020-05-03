@@ -20,7 +20,7 @@ return [
 	],[
 		'icon' => 'fas fa-user-plus',
 		'title' => 'Cadastro de paciente',
-		'url' => '/form/wizards',
+		'url' => '/cadastro-paciente',
 	],[
 		'icon' => 'fas fa-users',
 		'title' => 'Lista de paciente',
