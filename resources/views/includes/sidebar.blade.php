@@ -11,12 +11,12 @@
 				<a href="javascript:;" data-toggle="nav-profile">
 					<div class="cover with-shadow"></div>
 					<div class="image">
-						<img src="/assets/img/user/user-13.jpg" alt="" />
+						<img src="/assets/img/user/social.png" alt="" />
 					</div>
 					<div class="info">
 						<b class="caret pull-right"></b>
-						Sean Ngu
-						<small>CEO Hospital Capital</small>
+						Maria Braga
+						<small>Front end developer</small>
 					</div>
 				</a>
 			</li>
