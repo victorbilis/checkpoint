@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Managed Tables - Autofill')
+@section('title', 'Listagem Médicos')
 
 @push('css')
 	<link href="/assets/plugins/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />

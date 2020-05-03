@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Wizards')
+@section('title', 'Cadastro Paciente')
 
 @push('css')
 	<link href="/assets/plugins/smartwizard/dist/css/smart_wizard.css" rel="stylesheet" />

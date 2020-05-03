@@ -31,7 +31,7 @@
 			<!-- end login-header -->
 			<!-- begin login-content -->
 			<div class="login-content">
-				<form action="/" method="POST" class="margin-bottom-0">
+				<form action="/dashboard/v2" method="POST" class="margin-bottom-0">
 					<div class="form-group m-b-15">
 						<input type="text" class="form-control form-control-lg" placeholder="Login" required />
 					</div>

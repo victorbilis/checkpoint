@@ -74,8 +74,8 @@ var handleBarChart = function() {
             .showValues(true)
             .duration(250);
         
-        barChart.yAxis.axisLabel("Total Sales");
-        barChart.xAxis.axisLabel('Product');
+        barChart.yAxis.axisLabel("números");
+        barChart.xAxis.axisLabel('Dias da semana');
     
         d3.select('#nv-bar-chart').append('svg').datum(barChartData).call(barChart);
         nv.utils.windowResize(barChart.update);

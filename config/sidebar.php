@@ -31,7 +31,7 @@ return [
 		'title' => 'Lista de médicos',
 		'url' => '/table/manage/autofill',
 	],[
-		'icon' => 'fa fa-calendar',
+		'icon' => 'fa fa-calendar-alt',
 		'title' => 'Consultas Marcadas',
 		'url' => '/calendar'
 	],

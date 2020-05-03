@@ -1,6 +1,6 @@
 @extends('layouts.empty', ['paceTop' => true, 'bodyExtraClass' => 'bg-white'])
 
-@section('title', 'Login Page')
+@section('title', 'Login')
 
 @section('content')
 	<!-- begin login -->

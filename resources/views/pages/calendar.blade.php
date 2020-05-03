@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Calendar')
+@section('title', 'Calendário de consultas')
 
 @push('css')
 	<link href="/assets/plugins/fullcalendar/fullcalendar.print.css" rel="stylesheet" media='print' />
