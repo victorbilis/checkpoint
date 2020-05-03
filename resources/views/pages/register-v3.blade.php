@@ -30,58 +30,55 @@
 				<form action="/confirmacao-telefone" method="POST" class="margin-bottom-0">
 					<label class="control-label">Nome <span class="text-danger">*</span></label>
 					<div class="row row-space-10">
-						<div class="col-md-6 m-b-15">
-							<input type="text" class="form-control" placeholder="Nome" required />
-						</div>
-						<div class="col-md-6 m-b-15">
-							<input type="text" class="form-control" placeholder="Sobrenome" required />
+						<div class="col-md-12 m-b-15">
+							<input type="text" class="form-control" placeholder="Nome Completo" name="name" required />
 						</div>
 					</div>
 					<label class="control-label">CPF <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input id="masked-input-cpf" type="text" class="form-control" placeholder="999.999.999-99" required />
+							<input id="masked-input-cpf" type="text" class="form-control" placeholder="999.999.999-99" name="cpf" required/>
 						</div>
 					</div>
-					<label class="control-label">Sexo <span class="text-danger">*</span></label>
+					<label class="control-label">Sexo<span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-						<select id="inputState" class="form-control">
+						<select id="inputState" class="form-control" name="gener">
 							<option selected disabled>Escolha</option>
-							<option>Masculino</option>
-							<option>Feminino</option>
-							<option>Outros</option>
+							<option value="">Masculino</option>
+							<option value="">Feminino</option>
+							<option value="">Outros</option>
 						</select>
 						</div>
 					</div>					
-					<label class="control-label">Telefone<span class="text-danger">*</span></label>
+					<label class="control-label">Celular<span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="text" id="masked-input-phone" class="form-control" placeholder="(99) 99999-9999 " required />
+							<input type="text" id="masked-input-phone" class="form-control" placeholder="(99) 99999-9999 " name="phone_number" required/>
 						</div>
 					</div>
 					<label class="control-label">E-mail<span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="email" class="form-control" placeholder="Endereço e-mail " required />
+							<input type="email" class="form-control" placeholder="Endereço e-mail " required name="email"/>
 						</div>
 					</div>
 					<label class="control-label">Confirmar e-mail <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="email" class="form-control" placeholder="Escrever endereço e-mail" required />
+							<input type="email" class="form-control" placeholder="Escrever endereço e-mail" name="email_confirmation" required/>
 						</div>
 					</div>
-					<label class="control-label">Senha <span class="text-danger">*</span></label>
+					<label class="control-label">Senha<span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="password" class="form-control" placeholder="Informe uma senha" required />
+							<input type="password" class="form-control" placeholder="Informe uma senha" required name="password"/>
 						</div>
 					</div>
 					<label class="control-label">Confirmar senha <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="password" class="form-control" placeholder="Informe uma senha" required />
+							<input type="password" class="form-control" placeholder="Informe uma senha" required name="password_confirmation"/>
 						</div>
 					</div>
 					<div class="register-buttons">
