@@ -11,7 +11,7 @@
 	</ol>
 	<!-- end breadcrumb -->
 	<!-- begin page-header -->
-	<h1 class="page-header">Timeline <small>header small text goes here...</small></h1>
+	<h1 class="page-header">Timeline consultas<small> dados do cliente</small></h1>
 	<!-- end page-header -->
 	
 	<!-- begin timeline -->
@@ -19,8 +19,8 @@
 		<li>
 			<!-- begin timeline-time -->
 			<div class="timeline-time">
-				<span class="date">today</span>
-				<span class="time">04:20</span>
+				<span class="date">Semana passada</span>
+				<span class="time">27/04/2020</span>
 			</div>
 			<!-- end timeline-time -->
 			<!-- begin timeline-icon -->
@@ -37,53 +37,50 @@
 				</div>
 				<div class="timeline-content">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus turpis quis tincidunt luctus.
-						Nam sagittis dui in nunc consequat, in imperdiet nunc sagittis.
+						Hospital Capital - horário total de atendimento: 2 horas 
+						<br/>
+						Entrada: 18:00 - Saída: 20:00
+						<hr/>
+						Descrição: paciente teve confulsos na noite anterior, com mal está e muita dor de cabeça
 					</p>
 				</div>
-				<div class="timeline-likes">
-					<div class="stats-right">
-						<span class="stats-text">259 Shares</span>
-						<span class="stats-text">21 Comments</span>
-					</div> 
-					<div class="stats">
-						<span class="fa-stack fa-fw stats-icon">
-						  <i class="fa fa-circle fa-stack-2x text-danger"></i>
-						  <i class="fa fa-heart fa-stack-1x fa-inverse t-plus-1"></i>
-						</span>
-						<span class="fa-stack fa-fw stats-icon">
-						  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-						  <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="stats-total">4.3k</span>
-					</div>
-				</div>
-				<div class="timeline-footer">
-					<a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
-					<a href="javascript:;" class= m-r-15 text-inverse-lighter"><i class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a> 
-					<a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
-				</div>
-				<div class="timeline-comment-box">
-					<div class="user"><img src="../assets/img/user/user-13.jpg" /></div>
-					<div class="input">
-						<form action="">
-							<div class="input-group">
-								<input type="text" class="form-control rounded-corner" placeholder="Write a comment..." />
-								<span class="input-group-btn p-l-10">
-									<button class="btn btn-primary f-s-12 rounded-corner" type="button">Comment</button>
-								</span>
-							</div>
-						</form>
-					</div>
-				</div>
+				<ul>
+					<li>Entrada no local: 18:00
+						<br/>
+							- Nome atendente: Beatriz Costa
+							<br/>
+							- Hash atendimento: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Realizou uma consulta clínico geral: 18:30
+						<br/>
+							- Nome funcionario: Beatriz Costa
+							<br/>
+							- Ação: Clínico pediu a realização de um exame de sangue ao paciente
+							<br/>
+							- Hash médico: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Realizou exame de sangue: 19:00
+						<br/>
+							- Nome enfermeiro: Beatriz Costa
+							<br/>
+							- Ação: foram coletados 3 potes de sangue, para verificar do açucar e sal no sangue
+							<br/>
+							- Hash médico: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Saiu do hospital: 20:00
+					</li>
+				</ul>				
 			</div>
 			<!-- end timeline-body -->
 		</li>
 		<li>
 			<!-- begin timeline-time -->
 			<div class="timeline-time">
-				<span class="date">yesterday</span>
-				<span class="time">20:17</span>
+				<span class="date">Semana passada</span>
+				<span class="time">15/04/2020</span>
 			</div>
 			<!-- end timeline-time -->
 			<!-- begin timeline-icon -->
@@ -94,27 +91,56 @@
 			<!-- begin timeline-body -->
 			<div class="timeline-body">
 				<div class="timeline-header">
-					<span class="userimage"><img src="../assets/img/user/user-2.jpg" alt="" /></span>
-					<span class="username">Darren Parrase</span>
-					<span class="pull-right text-muted">82 Views</span>
+					<span class="userimage"><img src="../assets/img/user/user-1.jpg" alt="" /></span>
+					<span class="username"><a href="javascript:;">John Smith</a> <small></small></span>
+					<span class="pull-right text-muted">18 Views</span>
 				</div>
 				<div class="timeline-content">
-					<p>Location: United Sate</p>
-					<div id="google-map" class="height-sm m-b-10"></div>
+					<p>
+						Hospital Capital - horário total de atendimento: 2 horas 
+						<br/>
+						Entrada: 18:00 - Saída: 20:00
+						<hr/>
+						Descrição: paciente teve confulsos na noite anterior, com mal está e muita dor de cabeça
+					</p>
 				</div>
-				<div class="timeline-footer">
-					<a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
-					<a href="javascript:;" class= m-r-15 text-inverse-lighter"><i class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a> 
-					<a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
-				</div>
+				<ul>
+					<li>Entrada no local: 18:00
+						<br/>
+							- Nome atendente: Beatriz Costa
+							<br/>
+							- Hash atendimento: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Realizou uma consulta clínico geral: 18:30
+						<br/>
+							- Nome funcionario: Beatriz Costa
+							<br/>
+							- Ação: Clínico pediu a realização de um exame de sangue ao paciente
+							<br/>
+							- Hash médico: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Realizou exame de sangue: 19:00
+						<br/>
+							- Nome enfermeiro: Beatriz Costa
+							<br/>
+							- Ação: foram coletados 3 potes de sangue, para verificar do açucar e sal no sangue
+							<br/>
+							- Hash médico: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Saiu do hospital: 20:00
+					</li>
+				</ul>				
 			</div>
 			<!-- end timeline-body -->
 		</li>
 		<li>
 			<!-- begin timeline-time -->
 			<div class="timeline-time">
-				<span class="date">24 February 2014</span>
-				<span class="time">08:17</span>
+				<span class="date">Semana passada</span>
+				<span class="time">01/04/2020</span>
 			</div>
 			<!-- end timeline-time -->
 			<!-- begin timeline-icon -->
@@ -125,30 +151,56 @@
 			<!-- begin timeline-body -->
 			<div class="timeline-body">
 				<div class="timeline-header">
-					<span class="userimage"><img src="../assets/img/user/user-6.jpg" alt="" /></span>
-					<span class="username">Richard Leong</span>
-					<span class="pull-right text-muted">1,282 Views</span>
+					<span class="userimage"><img src="../assets/img/user/user-1.jpg" alt="" /></span>
+					<span class="username"><a href="javascript:;">John Smith</a> <small></small></span>
+					<span class="pull-right text-muted">18 Views</span>
 				</div>
 				<div class="timeline-content">
-					<p class="lead">
-						<i class="fa fa-quote-left fa-fw pull-left"></i>
-						Quisque sed varius nisl. Nulla facilisi. Phasellus consequat sapien sit amet nibh molestie placerat. Donec nulla quam, ullamcorper ut velit vitae, lobortis condimentum magna. Suspendisse mollis in sem vel mollis.
-						<i class="fa fa-quote-right fa-fw pull-right"></i>
+					<p>
+						Hospital Capital - horário total de atendimento: 2 horas 
+						<br/>
+						Entrada: 18:00 - Saída: 20:00
+						<hr/>
+						Descrição: paciente teve confulsos na noite anterior, com mal está e muita dor de cabeça
 					</p>
 				</div>
-				<div class="timeline-footer">
-					<a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
-					<a href="javascript:;" class= m-r-15 text-inverse-lighter"><i class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a> 
-					<a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
-				</div>
+				<ul>
+					<li>Entrada no local: 18:00
+						<br/>
+							- Nome atendente: Beatriz Costa
+							<br/>
+							- Hash atendimento: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Realizou uma consulta clínico geral: 18:30
+						<br/>
+							- Nome funcionario: Beatriz Costa
+							<br/>
+							- Ação: Clínico pediu a realização de um exame de sangue ao paciente
+							<br/>
+							- Hash médico: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Realizou exame de sangue: 19:00
+						<br/>
+							- Nome enfermeiro: Beatriz Costa
+							<br/>
+							- Ação: foram coletados 3 potes de sangue, para verificar do açucar e sal no sangue
+							<br/>
+							- Hash médico: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Saiu do hospital: 20:00
+					</li>
+				</ul>				
 			</div>
 			<!-- end timeline-body -->
 		</li>
 		<li>
 			<!-- begin timeline-time -->
 			<div class="timeline-time">
-				<span class="date">10 January 2014</span>
-				<span class="time">20:43</span>
+				<span class="date">Semana passada</span>
+				<span class="time">12/03/2020</span>
 			</div>
 			<!-- end timeline-time -->
 			<!-- begin timeline-icon -->
@@ -159,39 +211,50 @@
 			<!-- begin timeline-body -->
 			<div class="timeline-body">
 				<div class="timeline-header">
-					<span class="userimage"><img src="../assets/img/user/user-7.jpg" alt="" /></span>
-					<span class="username">Lelouch Wong</span>
-					<span class="pull-right text-muted">1,021,282 Views</span>
+					<span class="userimage"><img src="../assets/img/user/user-1.jpg" alt="" /></span>
+					<span class="username"><a href="javascript:;">John Smith</a> <small></small></span>
+					<span class="pull-right text-muted">18 Views</span>
 				</div>
 				<div class="timeline-content">
-					<h4 class="template-title">
-						<i class="fa fa-map-marker-alt text-danger fa-fw"></i>
-						795 Folsom Ave, Suite 600 San Francisco, CA 94107
-					</h4>
-					<p>In hac habitasse platea dictumst. Pellentesque bibendum id sem nec faucibus. Maecenas molestie, augue vel accumsan rutrum, massa mi rutrum odio, id luctus mauris nibh ut leo.</p>
-					<p class="m-t-20">
-						<img src="../assets/img/gallery/gallery-4.jpg" alt="" />
+					<p>
+						Hospital Capital - horário total de atendimento: 2 horas 
+						<br/>
+						Entrada: 18:00 - Saída: 20:00
+						<hr/>
+						Descrição: paciente teve confulsos na noite anterior, com mal está e muita dor de cabeça
 					</p>
 				</div>
-				<div class="timeline-footer">
-					<a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
-					<a href="javascript:;" class= m-r-15 text-inverse-lighter"><i class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a> 
-					<a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
-				</div>
+				<ul>
+					<li>Entrada no local: 18:00
+						<br/>
+							- Nome atendente: Beatriz Costa
+							<br/>
+							- Hash atendimento: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Realizou uma consulta clínico geral: 18:30
+						<br/>
+							- Nome funcionario: Beatriz Costa
+							<br/>
+							- Ação: Clínico pediu a realização de um exame de sangue ao paciente
+							<br/>
+							- Hash médico: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Realizou exame de sangue: 19:00
+						<br/>
+							- Nome enfermeiro: Beatriz Costa
+							<br/>
+							- Ação: foram coletados 3 potes de sangue, para verificar do açucar e sal no sangue
+							<br/>
+							- Hash médico: ec02c59dee6faaca3189bace969c22d3
+					</li>
+					<br/>
+					<li>Saiu do hospital: 20:00
+					</li>
+				</ul>				
 			</div>
 			<!-- end timeline-body -->
-		</li>
-		<li>
-			<!-- begin timeline-icon -->
-			<div class="timeline-icon">
-				<a href="javascript:;">&nbsp;</a>
-			</div>
-			<!-- end timeline-icon -->
-			<!-- begin timeline-body -->
-			<div class="timeline-body">
-				Loading...
-			</div>
-			<!-- begin timeline-body -->
 		</li>
 	</ul>
 	<!-- end timeline -->

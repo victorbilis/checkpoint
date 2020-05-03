@@ -36,7 +36,7 @@
 						<span class="number">2</span> 
 						<span class="info text-ellipsis">
 							Triagem
-							<small class="text-ellipsis">encaminhamento do paciente</small>
+							<small class="text-ellipsis">Encaminhamento do paciente</small>
 						</span>
 					</a>
 				</li>
@@ -179,25 +179,7 @@
 									<div class="col-md-6">
 									<input type="text" name="ic" placeholder="85136c79cbf9fe36bb9d05d0639c70c265c18d37" class="form-control" disabled/>
 									</div>
-								</div>
-								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Médico</label>
-									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="Victor Moraes da Silva" class="form-control" />
-									</div>
-								</div>
-								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Médico</label>
-									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
-									</div>
-								</div>
-								<div class="form-group row m-b-10">
-									<label class="col-md-3 text-md-right col-form-label">Médico</label>
-									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
-									</div>
-								</div>
+								</div>								
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Data do atendimento</label>
 									<div class="col-md-6">
@@ -264,7 +246,7 @@
 								<div class="form-group row m-b-10">
 									<label class="col-md-3 text-md-right col-form-label">Encaminhamento</label>
 									<div class="col-md-6">
-									<input type="text" name="ic" placeholder="$1$kBKJMHQ4$1pp13Bafhu5u1Q7WBexWW" class="form-control" />
+									<input type="text" name="ic" placeholder="" class="form-control" />
 									</div>
 								</div>
 								<!-- end form-group row -->
