@@ -287,7 +287,8 @@ Route::get('/teste/twilio2', function () {
 })->name('teste_twilio2');
 
 Route::post('/teste/mensagem', 'HomeController@sendMessage')->name('enviar_mensagem');
-Route::post('/teste/mensagem/verificar', 'HomeController@verificar')->name('verificar');
+Route::post('/token/verificar', 'HomeController@verificar')->name('verificar');
+Route::get('/pdf', 'HomeController@pdf')->name('pdf');
 
 Auth::routes();
 

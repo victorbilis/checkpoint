@@ -61,6 +61,14 @@ class HomeController extends Controller
        return redirect()->route('teste_twilio2')->with(['phone_number' => $data['phone_number'], 'error' => 'Invalid verification code entered!']);
     }
 
+    public function pdf(Request $request)
+    {
+        $pdf = app('dompdf.wrapper');
+        $pdf->getDomPDF()->set_option("enable_php", true);
+        $pdf->loadView('pdf.pdf');
+        return $pdf->stream();
+    }
+
     public function receita(Request $request)
     {
         $data = $request->toArray();
