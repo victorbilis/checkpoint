@@ -4,15 +4,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Teste</title>
 
-        <link href="{{asset('css/bundle.css')}}" rel="stylesheet" />
-        <link href="{{asset('css/default/style-responsive.min.css')}}" rel="stylesheet" />
-        <link href="{{asset('css/default/theme/default.css')}}" rel="stylesheet" id="theme" />
-        <link href="{{asset('plugins/DataTables/media/css/dataTables.bootstrap.min.css')}}" rel="stylesheet" />
-        <link href="{{asset('plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css')}}" rel="stylesheet" />
-        <link href="{{asset('plugins/jquery-smart-wizard/src/css/smart_wizard.css')}}" rel="stylesheet" />
-        <link href="{{asset('plugins/parsley/src/parsley.css')}}" rel="stylesheet" />
-        <link href="{{asset('plugins/animate/animate.min.css')}}" rel="stylesheet" />
-        <script src="{{asset('plugins/pace/pace.min.js')}}"> </script>
     </head>
     <style>
             @page {
@@ -100,7 +91,6 @@
           <tbody>
             <tr>
               <td><label style="font-size:25px;color:#595959"><b>Proposta</b> <label style="font-size:14px;color:#595959"><b> Nº 312321312</b></label></label></td>
-              <td align="right"><img src="{{asset('img/logo/ambipar_products.png')}}" height="60px" alt=""></td>
             </tr>
             <tr>
             <td width="50%"><label style="font-size:14px;color:#595959"><b>Cliente:</b> dsadasdas</label></td>
@@ -124,7 +114,6 @@
         </table>
         </center>
         <center>
-        <img src="{{asset('img/logo/rodapé_ecoproducts_pdf.png')}}" width="40%" height="80px" alt="">
         </center>
     </footer>
 
@@ -133,9 +122,6 @@
       <center>
         <table width="100%">
           <tbody>
-            <tr>
-                <td><img src="{{asset('img/logo/proposta_etapa_ecoproducts.png')}}" height="80px" alt=""></td>
-            </tr>
           </tbody>
         </table>
         </center>
@@ -144,7 +130,7 @@
         <table width="100%">
           <tbody>
             <tr>
-                <td width="10px"><img src="{{url('img/imagens propostas/numero_1_eco.png')}}"height="30px" alt=""></td>
+              
                 <td><label style="font-size:18px;color:#000;"><b>FORNECIMENTO DE MATERIAIS PARA PROTEÇÃO AMBIENTAL E INDIVIDUAL</b></label></td>
             </tr>
           </tbody>
@@ -153,9 +139,7 @@
         <center>
         <table width="100%">
           <tbody>
-            <tr>
-                <td width="10px"><img src="{{url('img/imagens propostas/numero_2_eco.png')}}"height="30px" alt=""></td>
-                <td><label style="font-size:16px;color:#000;"><b>DIFERENCIAIS</b></label></td>
+            <tr><td><label style="font-size:16px;color:#000;"><b>DIFERENCIAIS</b></label></td>
             </tr>
           </tbody>
         </table>
@@ -200,7 +184,6 @@
         <table width="100%" style="margin-bottom:0px">
           <tbody>
             <tr>
-                <td width="10px"><img src="{{url('img/imagens propostas/numero_3_eco.png')}}" height="30px" alt=""></td>
                 <td><label style="font-size:16px;color:#000;"><b>INFORMAÇÕES GERAIS</b></label></td>
             </tr>
           </tbody>
@@ -241,7 +224,6 @@
         <table width="100%">
           <tbody>
             <tr>
-                <td width="10px"><img src="{{url('img/imagens propostas/numero_4_eco.png')}}"height="30px" alt=""></td>
                 <td><label style="font-size:16px;color:#000;"><b>PROPOSTA </b></label></td>
             </tr>
           </tbody>
