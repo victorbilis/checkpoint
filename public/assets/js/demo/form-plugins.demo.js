@@ -336,11 +336,6 @@ var FormPlugins = function () {
 			handleBootstrapColorPalette();
 			handleSimpleColorpicker();
             handleClipboard();
-<<<<<<< HEAD
-            alertando();
-=======
-            alertNOVO();
->>>>>>> ac18f3d6658ceca5f1c7b2e3cd887c35890992f6
         }
     };
 }();
