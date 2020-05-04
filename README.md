@@ -48,23 +48,23 @@ Projeto de criar um simples E-Comerce para conectar clientes e vendedores a enfr
 
 ## ✍ Autores
 
-👤 **Victor Bilis (https://emcomp.com.br)**
+👤 **Victor Bilis**
 
 * Github: [@victorbilisambipar](https://github.com/victorbilisambipar)
 
-👤 **Paulo Victor (https://emcomp.com.br)**
+👤 **Paulo Victor**
 
 * Github: [@paulovictorBraw](https://github.com/paulovictorBraw)
 
-👤 **Felipe Candian (https://emcomp.com.br)**
+👤 **Felipe Candian**
 
 * Github: [@felipecandian]( https://github.com/felipecandian)
 
-👤 **Bruno Eleodoro (https://emcomp.com.br)**
+👤 **Bruno Eleodoro**
 
 * Github: [@BrunoEleodoro]( https://github.com/BrunoEleodoro)
 
-👤 **Rodrigo Temoteo (https://emcomp.com.br)**
+👤 **Rodrigo Temoteo**
 
 * Github: [@rodrigoatemoteo]( https://github.com/rodrigoatemoteo)
 
