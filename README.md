@@ -70,7 +70,7 @@ Projeto de criar um simples E-Comerce para conectar clientes e vendedores a enfr
 
 ## 📝 Licença
 
-Copyright © 2020 [Checkpoint (https://github.com/checkpoint)](https://github.com/checkpoint).<br />
+Copyright © 2020 Checkpoint<br />
 
 ***
 
