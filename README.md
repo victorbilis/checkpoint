@@ -29,6 +29,10 @@ O Checkpoint é uma solução que centraliza os dados do paciente no Blockchain 
 	<li>Validação de Código de seguração do cadastro por sms</li>
 </ul>
 
+## 📖 Documentação
+
+:point_right: A documentação completa estará disponível [AQUI](doc.md).
+
 ## ✍ Autores
 
 👤 **Victor Bilis**
