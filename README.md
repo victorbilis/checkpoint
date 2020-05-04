@@ -46,7 +46,7 @@ Projeto de criar um simples E-Comerce para conectar clientes e vendedores a enfr
 <ul>
 	<li>Validação de Código de seguração por sms</li>
 </ul>
-<img href="pages/register.png/>
+<img src="pages/register.png/>
 
 ## ✍ Autores
 
