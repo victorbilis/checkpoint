@@ -24,13 +24,15 @@ class HomeController extends Controller
     public function receita(Request $request)
     {
         $data = $request->toArray();
+        $id = Auth::id();
+        $user = User::findOrFail($id);
 
         $token = env("TWILIO_AUTH_TOKEN");
         $twilio_sid = env("TWILIO_SID");
         $twilio_verify_sid = env("TWILIO_VERIFY_SID");
         $twilio = new Client($twilio_sid, $token);
         
-        $teste = "whatsapp:".Auth::user()->phone_number;
+        $teste = "whatsapp:".$user->phone_number;
         $verification = $twilio->messages
         ->create($teste, // to
                  [
