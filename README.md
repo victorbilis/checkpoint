@@ -40,11 +40,13 @@ Projeto de criar um simples E-Comerce para conectar clientes e vendedores a enfr
 	<li>Gerenciador de pacotes - Composer</li>
 </ul>
 
+## Integrações com apis
 
-## 📖 Projeto
-
-
-
+<h3>Api da twilio</h3>
+<ul>
+	<li>Validação de Código de seguração por sms</li>
+</ul>
+<img href="pages/register.png/>
 
 ## ✍ Autores
 
