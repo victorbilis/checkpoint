@@ -42,11 +42,15 @@ Projeto de criar um simples E-Comerce para conectar clientes e vendedores a enfr
 
 ## Integrações com apis
 
+<h3>Api da Gr1d</h3>
+<ul>
+	<li>Validação do usuário por meios dos dados informados</li>
+</ul>
+
 <h3>Api da twilio</h3>
 <ul>
-	<li>Validação de Código de seguração por sms</li>
+	<li>Validação de Código de seguração do cadastro por sms</li>
 </ul>
-<img src="pages/register.png/>
 
 ## ✍ Autores
 
