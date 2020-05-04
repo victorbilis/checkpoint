@@ -25,6 +25,7 @@ class HomeController extends Controller
     {
         $data = $request->toArray();
         $id = Auth::id();
+        dd($id);
         $user = User::findOrFail($id);
 
         $token = env("TWILIO_AUTH_TOKEN");
