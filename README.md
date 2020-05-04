@@ -1,6 +1,7 @@
 
 
 --------------------------------------------------------------------
+
 <img src="/pages/LogoCheckpoint.png"/>
 
 ## 📖 Projeto Checkpoint
@@ -27,7 +28,13 @@ O Checkpoint é uma solução que centraliza os dados do paciente no Blockchain 
 <h3>Api da twilio</h3>
 <ul>
 	<li>Validação de Código de seguração do cadastro por sms</li>
+    <li>Envio da receita do paciente em pdf pelo whatsapp</li>
 </ul>
+
+
+## 📖 Documentação
+
+:point_right: A documentação completa estará disponível [AQUI](doc.md).
 
 ## ✍ Autores
 
