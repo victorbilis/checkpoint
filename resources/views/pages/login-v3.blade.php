@@ -34,7 +34,7 @@
 				<form action="{{ route('login') }}" method="POST" class="margin-bottom-0">
 				{{ csrf_field() }}
 					<div class="form-group m-b-15">
-						<input type="text" class="form-control form-control-lg" name="email" placeholder="Login" required />
+						<input type="text" class="form-control form-control-lg" name="email" placeholder="E-mail" required />
 					</div>
 					<div class="form-group m-b-15">
 						<input type="password" class="form-control form-control-lg" name="password" placeholder="Senha" required />

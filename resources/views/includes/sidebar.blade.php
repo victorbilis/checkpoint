@@ -15,8 +15,7 @@
 					</div>
 					<div class="info">
 						<b class="caret pull-right"></b>
-						Maria Braga
-						<small>Front end developer</small>
+						Administrador
 					</div>
 				</a>
 			</li>

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Twilio\Rest\Client;
 use App\User;
 use Illuminate\Support\Facades\Validator;
-
+use Auth;
 class HomeController extends Controller
 {
     /**
@@ -25,14 +25,12 @@ class HomeController extends Controller
     {
         $data = $request->toArray();
 
-        $user = User::findOrFail(13);
-
         $token = env("TWILIO_AUTH_TOKEN");
         $twilio_sid = env("TWILIO_SID");
         $twilio_verify_sid = env("TWILIO_VERIFY_SID");
         $twilio = new Client($twilio_sid, $token);
         
-        $teste = "whatsapp:".$user->phone_number;
+        $teste = "whatsapp:".Auth::user()->phone_number;
         $verification = $twilio->messages
         ->create($teste, // to
                  [

@@ -32,13 +32,13 @@
 					<label class="control-label">Nome <span class="text-danger">*</span></label>
 					<div class="row row-space-10">
 						<div class="col-md-12 m-b-15">
-							<input type="text" class="form-control" placeholder="Nome Completo" name="name" required />
+							<input type="text" class="form-control" placeholder="Anna Maria da Silva" name="name" required />
 						</div>
 					</div>
 					<label class="control-label">CPF <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input id="masked-input-cpf" type="text" class="form-control" placeholder="999.999.999-99" name="cpf" required/>
+							<input id="masked-input-cpf" type="text" class="form-control" placeholder="123.458.157-99" name="cpf" required/>
 						</div>
 					</div>
 					<label class="control-label">Sexo<span class="text-danger">*</span></label>
@@ -55,31 +55,31 @@
 					<label class="control-label">Celular<span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="text" id="masked-input-phone" class="form-control" placeholder="(99) 99999-9999 " name="phone_number" required/>
+							<input type="text" id="masked-input-phone" class="form-control" placeholder="(81) 98568-8989 " name="phone_number" required/>
 						</div>
 					</div>
 					<label class="control-label">E-mail<span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="email" class="form-control" placeholder="Endereço e-mail " required name="email"/>
+							<input type="email" class="form-control" placeholder="exemplo@gmail.com" required name="email"/>
 						</div>
 					</div>
 					<label class="control-label">Confirmar e-mail <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="email" class="form-control" placeholder="Escrever endereço e-mail" name="email_confirmation" required/>
+							<input type="email" class="form-control" placeholder="exemplo@gmail.com" name="email_confirmation" required/>
 						</div>
 					</div>
 					<label class="control-label">Senha<span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="password" class="form-control" placeholder="Informe uma senha" required name="password"/>
+							<input type="password" class="form-control" placeholder="Informe uma senha" required name="password" min="8" max="100"/>
 						</div>
 					</div>
 					<label class="control-label">Confirmar senha <span class="text-danger">*</span></label>
 					<div class="row m-b-15">
 						<div class="col-md-12">
-							<input type="password" class="form-control" placeholder="Informe uma senha" required name="password_confirmation"/>
+							<input type="password" class="form-control" placeholder="Informe uma senha" required name="password_confirmation" min="8" max="100"/>
 						</div>
 					</div>
 					<div class="register-buttons">

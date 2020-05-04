@@ -21,7 +21,7 @@
 			<!-- begin login-header -->
 			<div class="login-header">
 				<div class="brand">
-					<span class="logo"></span> <b>Verifivação</b> usuário
+					<span class="logo"></span> <b>Verificação</b> usuário
 					<small>Capital Hospital</small>
 				</div>
 				<div class="icon">

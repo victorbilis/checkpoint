@@ -165,7 +165,7 @@
 					<div class="modal-content">
 						
 						<div class="modal-body  text-center">
-						<img src="/assets/img/user/user-icon-vector.png" class="img-rounded height-30" />
+						<img src="/assets/img/user/user-13.png" class="img-rounded height-30" />
 							<br/>
 							<br/>
 							<h4 class="modal-title">043c00e6c7ff021e8cc4d394d3264cb5</h4>

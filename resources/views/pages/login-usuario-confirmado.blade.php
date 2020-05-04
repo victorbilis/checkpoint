@@ -31,7 +31,7 @@
 			<!-- end login-header -->
 			<!-- begin login-content -->
 			<div class="login-content">
-				<form action="login/v3" method="GET" class="margin-bottom-0">
+				<form action="/login/v3" method="GET" class="margin-bottom-0">
 					<div class="form-group m-b-15">
 						<p class="text-center">Seu usuário foi cadastrado com sucesso <b class="text-checkpoint">Cadastrado com sucesso</b></p>
 						

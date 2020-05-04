@@ -30,10 +30,6 @@ return [
 		'icon' => 'fas fa-user-md',
 		'title' => 'Lista de médicos',
 		'url' => '/table/manage/autofill',
-	],[
-		'icon' => 'fa fa-calendar-alt',
-		'title' => 'Consultas Marcadas',
-		'url' => '/calendar'
 	]]
 	
 ];

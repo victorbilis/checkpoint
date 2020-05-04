@@ -52,7 +52,7 @@
 		<li class="dropdown navbar-user">
 			<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
 				<img src="/assets/img/user/user-13.png" alt="" /> 
-				<span class="d-none d-md-inline">Maria Braga</span> <b class="caret"></b>
+				<span class="d-none d-md-inline">Administrador</span> <b class="caret"></b>
 			</a>
 			<div class="dropdown-menu dropdown-menu-right">
 				
