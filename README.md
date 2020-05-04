@@ -1,7 +1,9 @@
 
 
 --------------------------------------------------------------------
+<div style="text-align=center">
 <img src="/pages/LogoCheckpoint.png"/>
+</div>
 
 ## 📖 Projeto Checkpoint
 
