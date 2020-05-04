@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\VerificarController;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use GuzzleHttp\Client;
-
+use Twilio\Rest\Client;
 
 class RegisterController extends Controller
 {
@@ -30,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/confirmacao-telefone';
 
     /**
      * Create a new controller instance.
@@ -50,49 +50,44 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        //dd(env('BASE_URL_GRID').'dadoscadastrais/v1/consultas/v2/L0001/'.$data["cpf"]);
-        $cLink = env('BASE_URL_GRID').'dadoscadastrais/v1/consultas/v2/L0001/'.$data["cpf"];
-        $client = new Client();
-        $res = $client->request('GET', $cLink,[
-            'headers' => [
-                'X-Api-Key' => '2b26e357-c3a0-4854-8e5d-3afefb353034'
-            ]
-        ]);
-        $aResponse = json_decode($res->getBody());
+        $name = $data["name"];
+        $cpf = preg_replace('/[^0-9]/', '', $data["cpf"]);
+        $gener = $data["gener"];
+        $phone = "+55".preg_replace('/[^0-9]/', '', $data["phone_number"]);
+        $email = $data["email"];
+        $password = $data["password"];
 
-        $cpf = $aResponse->content->nome->conteudo->documento;
-        $nome = $aResponse->content->nome->conteudo->nome;
-        /*if($res->getStatusCode() == 200){
-            dd($aResponse);
-        }else{
-            dd($aResponse);
-        } */
+        try{
+            $validarGrid = VerificarController::verificarGrid($cpf);
+            if($validarGrid == true){
 
-
-
-        $messages = [
-            'required' => 'O campo é obrigatório.',
-            'sometimes' => 'teste',
-            'confirmed' => 'As senhas não estão iguais.',
-            'email' => 'Insira um e-mail válido.'
-        ];
+            $messages = [
+                'required' => 'O campo é obrigatório.',
+                'sometimes' => 'teste',
+                'confirmed' => 'As senhas não estão iguais.',
+                'email' => 'Insira um e-mail válido.'
+            ];
+        
+            $rules = [
+                'phone_number' => 'required',
+                'gener' => 'required',
+                'cpf' => 'required',
+                'email' => 'required|string|email|max:255',
+                'password' => 'required|string|min:6|confirmed'
+            ];
     
-        $rules = [
-            'email' => 'required|string|email|max:255',
-            'password' => 'required|string|min:6|confirmed'
-        ];
+            $validate = Validator::make($data, $rules, $messages);
+    
+            return $validate;
 
-        $validate = Validator::make($data, $rules, $messages);
+            }else{
 
-        $validate->sometimes(['cpf'], 'required', function ($data) use ($cpf) {
-            return $data["cpf"] == $cpf;
-        });
+            }
+       
 
-        $validate->sometimes(['name'], 'required|string|max:255', function ($data) use ($nome) {
-            return $data["name"] == $nome;
-        });
-
-        return $validate;
+        }catch(Exception $e){
+            dd($e);
+        }
     }
 
     /**
@@ -103,10 +98,27 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        dd("teste");
+        $name = $data["name"];
+        $cpf = preg_replace('/[^0-9]/', '', $data["cpf"]);
+        $gener = $data["gener"];
+        $phone = "+55".preg_replace('/[^0-9]/', '', $data["phone_number"]);
+        $email = $data["email"];
+        $password = $data["password"];
+        
+        $token = env("TWILIO_AUTH_TOKEN");
+        $twilio_sid = env("TWILIO_SID");
+        $twilio_verify_sid = env("TWILIO_VERIFY_SID");
+        $twilio = new Client($twilio_sid, $token);
+        $twilio->verify->v2->services($twilio_verify_sid)
+        ->verifications
+        ->create($phone, "sms");
+
         return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
+            'name' => $name,
+            'cpf' => $cpf,
+            'gener' => $gener,
+            'phone_number' => $phone,
+            'email' => $email,
             'password' => bcrypt($data['password']),
         ]);
     }

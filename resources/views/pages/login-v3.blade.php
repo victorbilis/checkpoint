@@ -28,15 +28,16 @@
 					<i class="fa fa-sign-in"></i>
 				</div>
 			</div>
-			<!-- end login-header -->
+			<!-- end login-header --> 
 			<!-- begin login-content -->
 			<div class="login-content">
-				<form action="/dashboard/v2" method="POST" class="margin-bottom-0">
+				<form action="{{ route('login') }}" method="POST" class="margin-bottom-0">
+				{{ csrf_field() }}
 					<div class="form-group m-b-15">
-						<input type="text" class="form-control form-control-lg" placeholder="Login" required />
+						<input type="text" class="form-control form-control-lg" name="email" placeholder="Login" required />
 					</div>
 					<div class="form-group m-b-15">
-						<input type="password" class="form-control form-control-lg" placeholder="Senha" required />
+						<input type="password" class="form-control form-control-lg" name="password" placeholder="Senha" required />
 					</div>
 					<div class="checkbox checkbox-css m-b-30">
 						<input type="checkbox" id="remember_me_checkbox" value="" />

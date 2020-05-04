@@ -321,7 +321,7 @@
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-											<button type="button" class="btn btn-primary">Salvar</button>
+											<a href="{{route('pdf')}}" class="btn btn-primary">Salvar</a>
 										</div>
 										</div>
 									</div>

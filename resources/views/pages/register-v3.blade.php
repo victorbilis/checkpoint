@@ -27,7 +27,8 @@
 			<!-- end register-header -->
 			<!-- begin register-content -->
 			<div class="register-content">
-				<form action="/confirmacao-telefone" method="POST" class="margin-bottom-0">
+			<form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                        {{ csrf_field() }}
 					<label class="control-label">Nome <span class="text-danger">*</span></label>
 					<div class="row row-space-10">
 						<div class="col-md-12 m-b-15">

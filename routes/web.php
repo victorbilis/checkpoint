@@ -19,7 +19,7 @@ Route::get('/dashboard/v1', function () {
 });
 Route::get('/dashboard/v2', function () {
     return view('pages/dashboard-v2');
-});
+})->middleware('auth');
 Route::get('/email/inbox', function () {
     return view('pages/email-inbox');
 });
@@ -253,7 +253,7 @@ Route::get('/login/v2', function () {
 });
 Route::get('/login/v3', function () {
     return view('pages/login-v3');
-});
+})->name('login_oficial');
 Route::get('/register/v3', function () {
     return view('pages/register-v3');
 });
@@ -276,7 +276,7 @@ Route::get('/cadastro-paciente', function () {
     return view('pages/cadastro-paciente');
 });
 
-
+/*
 
 Route::get('/teste/twilio', function () {
     return view('teste');
@@ -284,11 +284,11 @@ Route::get('/teste/twilio', function () {
 
 Route::get('/teste/twilio2', function () {
     return view('teste2');
-})->name('teste_twilio2');
+})->name('teste_twilio2');*/
 
-Route::post('/teste/mensagem', 'HomeController@sendMessage')->name('enviar_mensagem');
-Route::post('/token/verificar', 'HomeController@verificar')->name('verificar');
-Route::get('/pdf', 'HomeController@pdf')->name('pdf');
+//Route::post('/teste/mensagem', 'HomeController@sendMessage')->name('enviar_mensagem');
+Route::post('/token/verificar', 'VerificarTwilioController@verificar')->name('verificar');
+Route::get('/pdf', 'HomeController@receita')->name('pdf');
 
 Auth::routes();
 

@@ -31,12 +31,16 @@
 			<!-- end login-header -->
 			<!-- begin login-content -->
 			<div class="login-content">
-				<form action="/confirmacao-email" method="POST" class="margin-bottom-0">
+				<form action="{{route('verificar')}}" method="POST" class="margin-bottom-0">
+				{{ csrf_field() }}
 					<div class="form-group m-b-15">
-						<input type="text" class="form-control form-control-lg" placeholder="Número de verificação" required />
+						
+						<input type="hidden" name="phone_number" value="{{$phonenumber}}"/>
+						<input type="hidden" name="id" value="{{$id}}"/>
+						<input type="number" name="verification_code" class="form-control form-control-lg" placeholder="Número de verificação" required />
 					</div>
 					<div class="form-group m-b-15">
-						<p class="text-center">Seu número de verificação foi enviado para o <b class="text-checkpoint">NÚMERO DE TELEFONE</b> informado no seu cadastro</p>
+						<p class="text-center">Seu número de verificação foi enviado para o <b class="text-checkpoint">{{$phonenumber}}</b> informado no seu cadastro</p>
 						
 					</div>
 					<div class="login-buttons">

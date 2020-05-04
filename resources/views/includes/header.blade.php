@@ -56,7 +56,10 @@
 			</a>
 			<div class="dropdown-menu dropdown-menu-right">
 				
-				<a href="javascript:;" class="dropdown-item">Log Out</a>
+				<a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Log Out</a>
+				<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+					{{ csrf_field() }}
+				</form>
 			</div>
 		</li>
 	</ul>
