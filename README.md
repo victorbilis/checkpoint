@@ -55,6 +55,7 @@ Projeto de criar um simples E-Comerce para conectar clientes e vendedores a enfr
 👤 **Paulo Victor (https://emcomp.com.br)**
 
 * Github: [@paulovictorBraw](https://github.com/paulovictorBraw)
+
 👤 **Felipe Candian (https://emcomp.com.br)**
 
 * Github: [@felipecandian]( https://github.com/felipecandian)
