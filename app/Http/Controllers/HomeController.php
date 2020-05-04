@@ -21,11 +21,9 @@ class HomeController extends Controller
 
     
 
-    public function receita(Request $request)
+    public function receita()
     {
-        $data = $request->toArray();
         $id = Auth::id();
-        dd($id);
         $user = User::findOrFail($id);
 
         $token = env("TWILIO_AUTH_TOKEN");
@@ -43,7 +41,7 @@ class HomeController extends Controller
                  ]
         );
 
-        return response()->download(storage_path('app\public\receitas\receita.pdf'));
+       return response()->download(storage_path('app\public\receitas\receita.pdf'));
     }
     
    
