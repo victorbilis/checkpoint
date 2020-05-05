@@ -12,14 +12,14 @@
 */
 
 Route::get('/', function () {
-	return redirect('/login/v3');
+	return view('pages/dashboard-v2');
 });
 Route::get('/dashboard/v1', function () {
     return view('pages/dashboard-v1');
 });
 Route::get('/dashboard/v2', function () {
     return view('pages/dashboard-v2');
-})->middleware('auth');
+});
 Route::get('/email/inbox', function () {
     return view('pages/email-inbox');
 });

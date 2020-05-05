@@ -16,7 +16,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     
@@ -31,9 +31,9 @@ class HomeController extends Controller
         $twilio_verify_sid = env("TWILIO_VERIFY_SID");
         $twilio = new Client($twilio_sid, $token);
         
-        $teste = "whatsapp:".$user->phone_number;
+        $teste = "whatsapp:+5519998517324";
         $verification = $twilio->messages
-        ->create($teste, // to
+        ->create("whatsapp:+5519998517324", // to
                  [
                      "mediaUrl" => ['https://owlhost.com.br/docs/receita.pdf'],
                      "from" => "whatsapp:+14155238886",
@@ -53,6 +53,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages/login-v3');
+        return view('pages/dashboard-v2');
     }
 }
