@@ -4,9 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Twilio\Rest\Client;
-use App\User;
 use Illuminate\Support\Facades\Validator;
-use Auth;
 class HomeController extends Controller
 {
     /**
