@@ -23,9 +23,7 @@ class HomeController extends Controller
 
     public function receita()
     {
-        $id = Auth::id();
-        $user = User::findOrFail($id);
-
+       
         $token = env("TWILIO_AUTH_TOKEN");
         $twilio_sid = env("TWILIO_SID");
         $twilio_verify_sid = env("TWILIO_VERIFY_SID");
